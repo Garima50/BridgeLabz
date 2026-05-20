@@ -1,6 +1,6 @@
 
 // Question:
-// 4) Create a library system with:
+// Create a library system with:
 // A Book class (Title, Author, ISBN, Availability).
 // A LibraryMember class (Name, MemberID, BorrowedBooks).
 // A Librarian class (IssueBook, ReturnBook).
