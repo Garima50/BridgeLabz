@@ -61,15 +61,6 @@ class Cart {
     // Cart should contain products
     private ArrayList<Product> products = new ArrayList<>();
 
-    // ERROR:
-    // public Cart(int id, String name, double price){
-    //     super(id, name, price);
-    // }
-
-    // Problem:
-    // Cart no longer extends Product,
-    // so constructor with super() is invalid.
-
     public void addProd(Product p) {
 
         // ERROR:
