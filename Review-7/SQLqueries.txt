@@ -105,4 +105,4 @@ Second INNER JOIN connects Account and Transactions using account_no.
 The subquery finds the latest (MAX) transaction date for that account.
 The outer query displays the transaction whose date matches the latest date.
 
--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
