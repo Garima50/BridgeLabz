@@ -1,0 +1,106 @@
+
+Question 1 (JDBC Programming)
+Develop a menu-driven JDBC application that supports the following operations:
+
+Create Account
+    |
+Deposit Amount
+    |
+Withdraw Amount
+    |
+Transfer Money
+    |
+Display Account Details
+    |
+Display Transaction History
+
+SOLN: DONE IN JDBC PROGRAMMING
+
+---------------------------------------------------------------------------------------------------------
+
+Question 2 (SQL)
+Display the customer having the highest account balance.
+
+SOLN:
+
+SELECT c.Customer_id, c.Customer_name,
+       a.Account_no, a.Balance
+FROM Customer c
+JOIN Account a
+ON c.Customer_id = a.Customer_id
+WHERE a.Balance = ( SELECT MAX(balance) FROM Account
+);
+
+Explanation:
+INNER JOIN is used because we need information from both Customer and Account tables.
+The tables are connected using the common column customer_id.
+The subquery finds the maximum balance from the Account table.
+The outer query displays only the customer whose balance matches that maximum value.
+
+---------------------------------------------------------------------------------------------------------
+
+Question 3 (SQL)
+Display the total transaction amount for each account.
+Arrange the result in descending order.
+
+SOLN:
+
+SELECT Account_no, SUM(amount) AS total_transaction_amount
+FROM Transaction
+GROUP BY Account_no
+ORDER BY total_transaction_amount DESC;
+
+Explanation:
+SUM() is an aggregate function that adds all transaction amounts of an account.
+GROUP BY account_no groups all transactions belonging to the same account.
+ORDER BY ... DESC sorts the total amounts from highest to lowest.
+
+--------------------------------------------------------------------------------------------------------
+
+Question 4 (SQL)
+Display customers who have more than one account.
+
+SOLN:
+
+SELECT c.Customer_id, c.Customer_name,
+       COUNT(a.Account_no) AS total_accounts
+FROM Customer c
+JOIN Account a
+ON c.Customer_id = a.Customer_id
+GROUP BY c.Customer_id, c.Customer_name
+HAVING COUNT(a.Account_no) > 1;
+
+Explanation:
+INNER JOIN combines customer details with their accounts.
+COUNT(account_no) counts how many accounts each customer has.
+GROUP BY creates one group for each customer.
+HAVING filters grouped data and displays only customers having more than one account.
+
+-----------------------------------------------------------------------------------------------------
+
+Question 5 (SQL)
+Display the latest transaction performed by every customer.
+now only give me these querues in sql.. no furtehr project
+
+SOLN:
+
+SELECT c.Customer_id, c.Customer_name, t.Transaction_id,
+       t.Transaction_type, t.Amount, t.Transaction_date
+FROM Customer c
+JOIN Account a
+ON c.Customer_id = a.Customer_id
+JOIN Transaction t
+ON a.Account_no = t.Account_no
+WHERE t.Transaction_date = (
+    SELECT MAX(t2.Transaction_date)
+    FROM Transactions t2
+    JOIN Account a2
+    ON t2.Account_no = a2.Account_no
+    WHERE a2.Customer_id = c.Customer_id
+);
+
+Explanation:
+First INNER JOIN connects Customer and Account using customer_id.
+Second INNER JOIN connects Account and Transactions using account_no.
+The subquery finds the latest (MAX) transaction date for that account.
+The outer query displays the transaction whose date matches the latest date.

@@ -1,0 +1,308 @@
+**If you want placement-level mastery for Strings + Arrays in Java, don’t randomly grind 500 LeetCode questions.**
+You need coverage of patterns.
+
+Below is a structured roadmap of the *actual important problem types* companies repeatedly ask.
+
+---
+
+# 1. ARRAY BASICS — MUST MASTER FIRST
+
+These are foundation problems. If these are weak, everything collapses.
+
+| Topic            | Important Questions    |
+| ---------------- | ---------------------- |
+| Traversal        | Linear Search          |
+| Min/Max          | Find largest/smallest  |
+| Prefix Sum       | Running sum, range sum |
+| Frequency        | Count occurrences      |
+| Reverse          | Reverse array          |
+| Rotation         | Rotate array by k      |
+| Two Pointer      | Move zeroes            |
+| Basic Simulation | Spiral matrix          |
+| Sorting Logic    | Sort 0s 1s 2s          |
+| Kadane           | Maximum subarray       |
+
+### Practice:
+
+* LeetCode 53 — Maximum Subarray
+* LeetCode 189 — Rotate Array
+* LeetCode 283 — Move Zeroes
+* LeetCode 75 — Sort Colors
+* LeetCode 121 — Best Time to Buy/Sell Stock
+
+---
+
+# 2. TWO POINTER + SLIDING WINDOW (VERY IMPORTANT)
+
+This is asked *everywhere*.
+
+| Pattern                 | Questions                 |
+| ----------------------- | ------------------------- |
+| Two Sum style           | Pair finding              |
+| Opposite pointers       | Container with most water |
+| Sliding window fixed    | Max sum subarray size k   |
+| Sliding window variable | Longest substring         |
+| Duplicate handling      | Remove duplicates         |
+| Window optimization     | Minimum window substring  |
+
+### Practice:
+
+* LeetCode 1 — Two Sum
+* LeetCode 11 — Container With Most Water
+* LeetCode 26 — Remove Duplicates
+* LeetCode 3 — Longest Substring Without Repeating Characters
+* LeetCode 76 — Minimum Window Substring
+* LeetCode 209 — Minimum Size Subarray Sum
+
+---
+
+# 3. HASHMAP / HASHSET BASED QUESTIONS
+
+**Critical for placements.**
+
+If you don’t think in hashmap terms quickly, OA rounds become painful.
+
+| Pattern             | Questions                    |
+| ------------------- | ---------------------------- |
+| Frequency map       | Character counting           |
+| Complement lookup   | Two Sum                      |
+| Duplicate detection | Contains Duplicate           |
+| Grouping            | Group Anagrams               |
+| Prefix sum map      | Subarray Sum K               |
+| Set optimization    | Longest consecutive sequence |
+
+### Practice:
+
+* LeetCode 1 — Two Sum
+* LeetCode 49 — Group Anagrams
+* LeetCode 128 — Longest Consecutive Sequence
+* LeetCode 560 — Subarray Sum Equals K
+* LeetCode 242 — Valid Anagram
+* LeetCode 217 — Contains Duplicate
+
+---
+
+# 4. STRING BASICS (VERY FREQUENT)
+
+| Topic            | Questions           |
+| ---------------- | ------------------- |
+| Reverse          | Reverse string      |
+| Palindrome       | Valid palindrome    |
+| Frequency        | Character frequency |
+| Parsing          | String to integer   |
+| Compression      | String compression  |
+| Comparison       | Isomorphic strings  |
+| Pattern matching | Valid anagram       |
+
+### Practice:
+
+* LeetCode 125 — Valid Palindrome
+* LeetCode 344 — Reverse String
+* LeetCode 387 — First Unique Character
+* LeetCode 8 — String to Integer (atoi)
+* LeetCode 205 — Isomorphic Strings
+* LeetCode 443 — String Compression
+
+---
+
+# 5. ADVANCED STRING QUESTIONS
+
+These separate average candidates from strong ones.
+
+| Pattern                | Questions          |
+| ---------------------- | ------------------ |
+| Sliding window strings | Longest substring  |
+| Pattern matching       | KMP/Rabin-Karp     |
+| Palindrome expansion   | Longest palindrome |
+| Stack-based            | Decode string      |
+| Expression parsing     | Basic calculator   |
+
+### Practice:
+
+* LeetCode 5 — Longest Palindromic Substring
+* LeetCode 28 — Find Index of First Occurrence
+* LeetCode 394 — Decode String
+* LeetCode 20 — Valid Parentheses
+* LeetCode 224 — Basic Calculator
+
+---
+
+# 6. MATRIX QUESTIONS (ARRAY 2D)
+
+Companies love these because they test implementation skill.
+
+### Practice:
+
+* LeetCode 48 — Rotate Image
+* LeetCode 54 — Spiral Matrix
+* LeetCode 73 — Set Matrix Zeroes
+* LeetCode 240 — Search 2D Matrix II
+* LeetCode 74 — Search a 2D Matrix
+
+---
+
+# 7. INTERVAL QUESTIONS
+
+Very common in Amazon, Google, Adobe, Atlassian.
+
+### Practice:
+
+* LeetCode 56 — Merge Intervals
+* LeetCode 57 — Insert Interval
+* LeetCode 435 — Non-overlapping Intervals
+* LeetCode 252 — Meeting Rooms
+* LeetCode 253 — Meeting Rooms II
+
+---
+
+# 8. BINARY SEARCH ON ARRAYS
+
+A lot of students only know normal binary search. That’s useless alone.
+
+### MUST PRACTICE:
+
+* LeetCode 704 — Binary Search
+* LeetCode 33 — Search in Rotated Sorted Array
+* LeetCode 153 — Find Minimum in Rotated Sorted Array
+* LeetCode 34 — Find First and Last Position
+* LeetCode 875 — Koko Eating Bananas
+* LeetCode 1011 — Capacity to Ship Packages
+
+---
+
+# 9. GREEDY ARRAY QUESTIONS
+
+### Practice:
+
+* LeetCode 55 — Jump Game
+* LeetCode 45 — Jump Game II
+* LeetCode 134 — Gas Station
+* LeetCode 435 — Non-overlapping Intervals
+
+---
+
+# 10. STACK + STRING/ARRAY COMBO
+
+Very placement-heavy now.
+
+### Practice:
+
+* LeetCode 20 — Valid Parentheses
+* LeetCode 739 — Daily Temperatures
+* LeetCode 84 — Largest Rectangle in Histogram
+* LeetCode 496 — Next Greater Element
+* LeetCode 155 — Min Stack
+
+---
+
+# 11. HARDER ARRAY QUESTIONS (TOP COMPANY LEVEL)
+
+### Practice:
+
+* LeetCode 42 — Trapping Rain Water
+* LeetCode 239 — Sliding Window Maximum
+* LeetCode 41 — First Missing Positive
+* LeetCode 238 — Product of Array Except Self
+* LeetCode 152 — Maximum Product Subarray
+
+---
+
+# 12. NON-LEETCODE QUESTIONS YOU MUST DO
+
+These are classic interview/OA style questions.
+
+## Arrays
+
+* Equilibrium index
+* Leaders in array
+* Rearrange positive/negative
+* Missing and repeating number
+* Majority element
+* Merge without extra space
+* Chocolate distribution
+* Dutch National Flag
+* Rain water trapping
+* Maximum product pair
+
+## Strings
+
+* Remove duplicates from string
+* Check rotations
+* Longest common prefix
+* Roman to integer
+* Count and say
+* Minimum insertions for palindrome
+* String permutations
+* Print all substrings
+* Word wrap
+* Minimum window substring
+
+---
+
+# MOST IMPORTANT PATTERNS TO MASTER
+
+If you understand these deeply, you can solve 70–80% of placement DSA:
+
+1. HashMap
+2. Sliding Window
+3. Two Pointers
+4. Prefix Sum
+5. Binary Search
+6. Stack
+7. Greedy
+8. Sorting + custom comparator
+
+---
+
+# GOOD PRACTICE ORDER
+
+Do NOT jump randomly.
+
+### Phase 1
+
+* Easy arrays
+* Easy strings
+* HashMap basics
+
+### Phase 2
+
+* Sliding window
+* Two pointers
+* Prefix sums
+
+### Phase 3
+
+* Binary search
+* Stack questions
+* Matrix
+
+### Phase 4
+
+* Hard arrays
+* Advanced strings
+* Greedy
+
+---
+
+# REALITY CHECK
+
+Most students:
+
+* memorize solutions,
+* cannot explain complexity,
+* fail when question wording changes slightly.
+
+You should practice like this:
+
+1. Solve brute force first
+2. Optimize yourself
+3. Explain time complexity aloud
+4. Re-solve after 3 days without hints
+
+That’s how interview-level problem solving actually develops.
+
+For placements, if you complete:
+
+* ~120–150 *quality* questions
+* with full understanding,
+  you’ll already be ahead of most candidates.
